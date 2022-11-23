@@ -11,7 +11,7 @@ public class CardOrderTest {
     void shouldSubmitForm() {
         open("http://localhost:9999");
         $(".input_type_text input").setValue("Мария Склодовская-Кюри");
-        $(".input_type_tel input").setValue("+792204508120");
+        $(".input_type_tel input").setValue("+79220450812");
         $("[data-test-id=agreement]").click();
         $(".button").click();
         $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
